@@ -84,9 +84,14 @@ nav button {
 }
 
 .btn {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 3px 8px;
-    font-weight: bold;
-    background-color: white;
+    font-weight: 400;
+    background-color: rgba(243, 233, 234, 0.0021);
+    border: 1px solid white;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .btn-red {
@@ -95,6 +100,12 @@ nav button {
     padding: 3px 24px;
     font-size: 20px;
     border-radius: 4px;
+    font-weight: 400;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
 }
 
 .hero-buttons {
@@ -113,8 +124,44 @@ nav button {
     border: 1px solid rgba(242, 238, 238, 0.4);
 }
 
-.btn-red-sm {
-    background-color: red;
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
     color: white;
+    align-items: center;
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
 
 }
